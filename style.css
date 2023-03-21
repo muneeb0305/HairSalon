@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header>img {
+    max-width: 400px;
+}
+
+nav>ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(212,100,76);
+    color: hsl(0, 0%, 100%);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+nav li {
+    padding: 10px;
+    font-size: large;
+}
+.hero{
+    position: relative;
+}
+.hero>img {
+   max-width: 100%;
+   filter: brightness(0.4);
+}
+.hero h1,p {
+   position: absolute;
+   color: white;
+}
+.hero>h1 {
+   top: 30%;
+   left: 3%;
+   font-size: 3rem;
+}
+.hero>p {
+   top: 50%;
+   left: 3%;
+   width: 70%;
+   font-size: 1.2rem;
+   text-align: justify;
+   line-height: 1.5;
+}
+
+.main {
+    display: flex;
+    gap: 10px;
+    margin: 20px 50px 0 50px;
+    justify-content: space-evenly;
+}
+.main>div{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 24.6%;
+}
+.card{
+    position: relative;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.card p{
+    display: none;
+    color: white;
+    text-align: justify;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    line-height: 1.5;
+    margin: 0 30px 0 30px;
+    animation: cardAnimation 1s forwards;
+
+}
+.card:hover p {
+    display: block;
+}
+@keyframes cardAnimation {
+    from{transform: rotate(180deg);}
+    to{transform: rotate(0deg);} 
+}
+
+.card:hover .image{
+    animation: imageAnimation 1s;
+}
+@keyframes imageAnimation {
+    from{filter: brightness(1);}
+    to{filter: brightness(0.2);} 
+}
+
+.footer {
+    display: flex;
+}
