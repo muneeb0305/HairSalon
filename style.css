@@ -90,6 +90,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .main img {
@@ -98,6 +99,7 @@ p {
     height: 350px;
     background-position: center;
     background-size: cover;
+    border-radius: 30px;
 }
 
 .main div p {
