@@ -45,7 +45,7 @@ nav a:hover {
 /*------------- Main Hero-------------------- */
 .hero {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero>img {
@@ -202,7 +202,7 @@ footer>h3 {
 
 /*------------- Responsive Media Queries -------------------- */
 
-@media screen and (min-width: 521px) {
+@media screen and (min-width: 582px) {
     .hero>h1 {
         top: 22%;
         left: 3%;
@@ -215,7 +215,7 @@ footer>h3 {
 
 }
 
-@media screen and (min-width: 897px) {
+@media screen and (min-width: 1012px) {
     .hero>h1 {
         top: 35%;
         left: 3%;
